@@ -145,7 +145,7 @@ static status_t GenericInsert(p_dll_t list, p_dll_node_t first, p_dll_node_t mid
     mid->next = last;
     mid->prev = first;
 
-    if(last != NULL) 
+    if(NULL != last) 
     {
         last->prev = mid;
     }
