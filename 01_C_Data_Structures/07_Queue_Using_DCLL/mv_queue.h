@@ -64,7 +64,7 @@ extern data_t MVQueueDeQueue(p_mv_queue_t);
     @params: 1. Queue
 			 2. Print Data Proc Callback
 */
-extern void	MVQueuePrint(p_mv_queue_t, printdataproc_t);
+extern void MVQueuePrint(p_mv_queue_t, printdataproc_t);
 
 /*
     @function: Destroying the Queue
