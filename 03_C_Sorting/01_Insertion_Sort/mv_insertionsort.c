@@ -17,13 +17,13 @@ extern void MVInsertionSort(void* data_structure,
 {
 	//Code
 	//ole -> Outer Loop Enumerator
-	for( long long ole = 1; ole < size; ++ole )
+	for(long long ole = 1; ole < size; ++ole)
 	{
 		data_t key = GetDataProc(data_structure, ole);
 
 		long long ile = ole-1;
 										// data_structure[ile]
-		while( ile >= 0 && SUCCESS == CompareProc( GetDataProc(data_structure, ile), key ) )
+		while(ile >= 0 && SUCCESS == CompareProc(GetDataProc(data_structure, ile), key))
 		{
 			// data_structure[ile + 1] = data_structure[ile]
 			SetDataProc(data_structure, GetDataProc(data_structure, ile), ile+1);
