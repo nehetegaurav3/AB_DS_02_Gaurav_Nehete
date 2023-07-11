@@ -188,8 +188,8 @@ static void PostOrderIterative(p_bst_node_t node, PRINTDATAPROC printdata)
 	//Code
 	p_bst_node_t runner = node;
 
-	p_mv_stack_t stack1 = MVCreateStack();
-	p_mv_stack_t stack2 = MVCreateStack();
+	p_mv_stack_t stack1 = MVCreateStack();		//For Traversing
+	p_mv_stack_t stack2 = MVCreateStack();		//For Printing
 	
     MVStackPush(stack1, runner);
 
@@ -208,6 +208,7 @@ static void PostOrderIterative(p_bst_node_t node, PRINTDATAPROC printdata)
 		}
 	}
 
+	//Printing the BST
     while(MVStackSize(stack2) > 0)
 	{
         runner = MVStackPop(stack2);
